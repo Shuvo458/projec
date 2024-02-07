@@ -1,14 +1,15 @@
 @font-face{
-    font-family: roboto-regular;
-    src: url('font/Roboto-Regular.ttf');
+    font-family:  roboto-regular;
+    src: url('../font/Roboto-Regular.ttf');
 }
 @font-face{
     font-family: roboto-bold;
-    src: url('font/Roboto-Bold.ttf');
+    src: url('../font/Roboto-Bold.ttf');
 }
-:root{
-    --regular:font/roboto-regular;
-    --bold:font/roboto-bold;
+
+:root {
+    --regular: roboto-regular;
+    --bold:roboto-bold;
 }
 *{
     margin: 0;
@@ -66,6 +67,15 @@ body{
     flex-grow: 1;
 }
 
+.blogs .blog_extra ul{
+    list-style: disc;
+    padding-left: 20px;
+}
+.blogs .blog_item h4{
+    font-weight: 900;
+    font-size: 24px;
+}
+
 
 
 @media (max-width: 768px) {
@@ -92,4 +102,6 @@ body{
 .footer_content{
     text-align: center;
     margin: 20px 20px;
+    line-height: 1.4;
+    /* border: 1px solid #66666663; */
 }
